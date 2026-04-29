@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="return validarTodo()">
+        <h1>Formulario</h1>
+        <div class="inputs">
+        <label for="inName">Nombre</label>
+        <input class="inpform" id="inName" type="text" required minlength="3">
+        <label id="error-1" class="error" for="inName"></label>
+
+        <label for="inApellido">Apellido</label>
+        <input class="inpform" id="inApellido" type="text" required minlength="3">
+        <label id="error-2" class="error" for="inApellido"></label>
+
+
+        <label for="inEmail">Email</label>
+        <input class="inpform" id="inEmail" type="text" required>
+        <label id="error-3" class="error" for="inEmail"></label>
+
+        <label for="inBirth">Fecha de Nacimiento</label>
+        <input class="inpform" id="inBirth" type="date" required>
+        <label id="error-4" class="error" for="inBirth"></label>
+
+        <label for="inPass-1">Contraseña</label>
+        <input class="inpform" id="inPass-1" type="password" required>
+        <label id="error-5" class="error" for="inPass-1"></label>
+
+        <label for="inPass-2" id="passlabel">Ingrese Nuevamente la Contraseña</label>
+        <input class="inpform" id="inPass-2" type="password" required>
+        <label id="error-6" class="error" for="inPass-2"></label>
+
+        <input  onclick="formatoMail(),validarEdad(),validarContraseña()" class="inpform" type="submit" id="envio" >
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
