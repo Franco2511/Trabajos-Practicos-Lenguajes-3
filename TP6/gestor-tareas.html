@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestor de Tareas</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <div class="header-accent"></div>
+    <div>
+      <h1 id="titulo">Gestor de <span>Tareas</span></h1>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div class="form-row">
+      <div class="field" style="flex: 2 1 280px;">
+        <label for="nombreTarea">Nombre de la tarea</label>
+        <input type="text" id="nombreTarea"/>
+        <span id="error-msg">&#9888; El nombre de la tarea no puede estar vacío.</span>
+      </div>
+      <div class="field" style="flex: 1 1 160px;">
+        <label for="prioridad">Prioridad</label>
+        <select id="prioridad">
+          <option value="Alta">Alta</option>
+          <option value="Media" selected>Media</option>
+          <option value="Baja">Baja</option>
+        </select>
+      </div>
+      <button class="btn-add" id="btnAgregar">+ Agregar</button>
+    </div>
+  </div>
+
+  <div class="table-card">
+    <p class="table-title">Listado de tareas</p>
+
+    <div class="stats">
+      <div class="stat-pill">Total: <strong id="cnt-total">0</strong></div>
+      <div class="stat-pill">Alta: <strong id="cnt-alta" style="color:var(--alta)">0</strong></div>
+      <div class="stat-pill">Media: <strong id="cnt-media" style="color:var(--media)">0</strong></div>
+      <div class="stat-pill">Baja: <strong id="cnt-baja" style="color:var(--baja)">0</strong></div>
+    </div>
+
+    <table id="tablaTareas">
+      <thead>
+        <tr>
+          <th>Tarea</th>
+          <th>Prioridad</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

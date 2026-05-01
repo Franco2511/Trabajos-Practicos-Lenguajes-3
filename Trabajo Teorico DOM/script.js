@@ -142,6 +142,7 @@ formulario.addEventListener('submit', (e) => {
 
 */
 //5-
+/*
 const usuarios = [
   { id: 1, nombre: "Ana García", rol: "Diseñadora", imagen: "https://picsum.photos/100?random=1" },
   { id: 2, nombre: "Luis Pérez", rol: "Desarrollador", imagen: "https://picsum.photos/100?random=2" },
@@ -162,5 +163,5 @@ function renderizarTarjetas(datos) {
   contenedor.innerHTML = htmlTarjetas;
 }
 
-// Ejecutamos la función
 renderizarTarjetas(usuarios);
+*/
